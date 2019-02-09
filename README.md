@@ -6,6 +6,3 @@
 - Install nvm
 - Install yarn
 - Install FZF
-
-## Symbolic Links
-init.vim -> `ln -s init.vim ~/.config/nvim`
