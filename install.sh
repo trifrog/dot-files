@@ -1,5 +1,29 @@
 #!/bin/zsh
 
+# Install homebrew
+# /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+# Install python 3
+# Install miniconda
+
+# Install nVim
+# brew install nvim
+
+# Install tmux
+# brew install tmux
+
+# Install nvm
+# brew install nvm
+
+# install yarn
+# npm i -g yarn
+
+# install FZF
+
+# install chrome browser
+# brew cask install chrome
+
+
 function symbolic_link_files()
 {
   linked_to_home="\t linked to ~"
