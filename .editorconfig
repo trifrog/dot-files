@@ -13,7 +13,7 @@ max_line_length = 80
 
 # Matches multiple files with brace expansion notation
 # Set default charset
-[*.{yml,json,js,html,css}]
+[*.{sh,yml,json,js,html,css}]
 indent_style = space
 indent_size = 2
 
