@@ -15,6 +15,7 @@
   call minpac#add('mattn/emmet-vim') " fast html/css/js code generation
   call minpac#add('Yggdroot/indentLine') " display indent level
   call minpac#add('scrooloose/nerdtree') " filebrowser
+  call minpac#add('ekalinin/Dockerfile.vim') " docker syntax file
 
   call minpac#update() " update packages
   "call minpac#clean() " delete old packages in directory
