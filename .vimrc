@@ -16,6 +16,8 @@
   call minpac#add('Yggdroot/indentLine') " display indent level
   call minpac#add('scrooloose/nerdtree') " filebrowser
   call minpac#add('ekalinin/Dockerfile.vim') " docker syntax file
+  call minpac#add('shougo/deoplete.nvim', {'do': ':UpdateRemotePlugins'})
+  call minpac#add('carlitux/deoplete-ternjs') " JS autocomplete
 
   call minpac#update() " update packages
   "call minpac#clean() " delete old packages in directory
@@ -68,3 +70,11 @@
 " Emmet
 " ------------------------------------------------------------------------------
   let g:user_emmet_leader_key=','
+
+" Deoplete - autocomplete for neovim
+" ------------------------------------------------------------------------------
+  let g:deoplete#enable_at_startup = 1
+  " deoplete tab-complete
+  inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
+  " tern
+  autocmd FileType javascript nnoremap <silent> <buffer> gb :TernDef<CR>
