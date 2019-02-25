@@ -19,12 +19,20 @@
   call minpac#add('shougo/deoplete.nvim', {'do': ':UpdateRemotePlugins'})
   call minpac#add('carlitux/deoplete-ternjs') " JS autocomplete
 
-  call minpac#update() " update packages
+  "call minpac#update() " update packages
   "call minpac#clean() " delete old packages in directory
 
 " ------------------------------------------------------------------------------
 " Configurations
 " ------------------------------------------------------------------------------
+
+" Filetype
+" ------------------------------------------------------------------------------
+  augroup FiletypeGroup
+    autocmd!
+    " .ts is a Typescript file
+    au BufNewFile,BufRead *.ts set filetype=typescript
+  augroup END
 
 " Vim
 " ------------------------------------------------------------------------------
@@ -33,6 +41,8 @@
 
   set number
   imap jk <Esc>
+  " Show double quotes in JSON files
+  set conceallevel=0
 
   " Switch Panes with ctrl + [hjkl]
   nnoremap <C-J> <C-W><C-J>
