@@ -19,7 +19,7 @@
   call minpac#add('shougo/deoplete.nvim', {'do': ':UpdateRemotePlugins'})
   call minpac#add('carlitux/deoplete-ternjs') " JS autocomplete
 
-  call minpac#update() " update packages
+  "call minpac#update() " update packages
   "call minpac#clean() " delete old packages in directory
 
 " ------------------------------------------------------------------------------

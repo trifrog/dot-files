@@ -46,6 +46,7 @@ function symbolic_link_files()
       ".tmux.conf") ln -sf ~/dot-files/.tmux.conf ~ && echo -e "$green_ $file: $linked_to_home $_end";;
       ".prettierrc.js") ln -sf ~/dot-files/.prettierrc.js  ~ && echo -e "$green_ $file: $linked_to_home $_end";;
       ".bash_profile") ln -sf ~/dot-files/.bash_profile ~ && echo -e "$green_ $file: $linked_to_home $_end";;
+      ".zshrc") ln -sf ~/dot-files/.zshrc ~ && echo -e "$green_ $file: $linked_to_home $_end";;
       ".editorconfig") ln -sf ~/dot-files/.editorconfig ~ && echo -e "$green_ $file: $linked_to_home $_end";;
       ".vimrc") ln -sf ~/dot-files/.vimrc ~/.vim && echo -e "$green_ $file: ~/.vim $_end";;
       "init.vim") ln -sf ~/dot-files/init.vim ~/.config/nvim && echo -e "$green_ $file: linked to ~/.config/nvim $_end";;
