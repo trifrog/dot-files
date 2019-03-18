@@ -132,3 +132,13 @@ export FZF_DEFAULT_COMMAND='rg --files --hidden' # ignore files in .gitignore
 # show colors and file details for ls
 alias ls='ls -Glaph'
 alias grep='grep --color=always'
+
+# tabtab source for serverless package
+# uninstall by removing these lines or running `tabtab uninstall serverless`
+[[ -f /Users/trile/dev/example/node_modules/tabtab/.completions/serverless.zsh ]] && . /Users/trile/dev/example/node_modules/tabtab/.completions/serverless.zsh
+# tabtab source for sls package
+# uninstall by removing these lines or running `tabtab uninstall sls`
+[[ -f /Users/trile/dev/example/node_modules/tabtab/.completions/sls.zsh ]] && . /Users/trile/dev/example/node_modules/tabtab/.completions/sls.zsh
+# tabtab source for slss package
+# uninstall by removing these lines or running `tabtab uninstall slss`
+[[ -f /Users/trile/dev/example/node_modules/tabtab/.completions/slss.zsh ]] && . /Users/trile/dev/example/node_modules/tabtab/.completions/slss.zsh

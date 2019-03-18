@@ -15,11 +15,12 @@
   call minpac#add('mattn/emmet-vim') " fast html/css/js code generation
   call minpac#add('Yggdroot/indentLine') " display indent level
   call minpac#add('scrooloose/nerdtree') " filebrowser
+  call minpac#add('scrooloose/nerdcommenter') " comments
   call minpac#add('ekalinin/Dockerfile.vim') " docker syntax file
   call minpac#add('shougo/deoplete.nvim', {'do': ':UpdateRemotePlugins'})
   call minpac#add('carlitux/deoplete-ternjs') " JS autocomplete
 
-  "call minpac#update() " update packages
+  call minpac#update() " update packages
   "call minpac#clean() " delete old packages in directory
 
 " ------------------------------------------------------------------------------
@@ -62,6 +63,24 @@
   \  && b:NERDTree.isTabTree()) | q | endif
 
   let NERDTreeShowHidden=1
+
+" NerdCommenter
+" ------------------------------------------------------------------------------
+  " Add spaces after comment delimiters by default
+  let g:NERDSpaceDelims = 1
+
+  " Use compact syntax for prettified multi-line comments
+  let g:NERDCompactSexyComs = 1
+
+  " Align line-wise comment delimiters flush left instead of following code indentation
+  let g:NERDDefaultAlign = 'left'
+
+  " Allow commenting and inverting empty lines (useful when commenting a region)
+  let g:NERDCommentEmptyLines = 1
+
+  " Enable trimming of trailing whitespace when uncommenting
+  let g:NERDTrimTrailingWhitespace = 1
+
 
 " Ack
 " ------------------------------------------------------------------------------
