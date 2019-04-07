@@ -14,6 +14,8 @@ export PATH=/usr/local/bin:$PATH
 # Access to Python 3 for pip3
 export PATH=/usr/local/share/python:$PATH
 
+alias py=python3
+
 # Node Version Manager - required for nvm to work
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
