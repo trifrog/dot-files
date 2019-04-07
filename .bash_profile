@@ -42,4 +42,3 @@ export FZF_DEFAULT_COMMAND='rg --files --hidden' # ignore files in .gitignore
 
 # show colors and file details for ls
 alias ls='ls -Glaph'
-alias grep='grep --color=always'
