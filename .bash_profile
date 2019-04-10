@@ -15,6 +15,7 @@ export PATH=/usr/local/bin:$PATH
 export PATH=/usr/local/share/python:$PATH
 
 alias py=python3
+alias pip=pip3
 
 # Node Version Manager - required for nvm to work
 export NVM_DIR="$HOME/.nvm"
